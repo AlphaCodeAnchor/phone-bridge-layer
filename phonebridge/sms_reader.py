@@ -1,6 +1,7 @@
-from adb_connector import run_adb_query
 import sys
 import io
+from .adb_connector import run_adb_query
+
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='ignore')
 
